@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>model-view-controller</title>
-  </head>
-  <body>
-    <h1>Hello world</h1>
-  </body>
-</html>
+<?php
+require_once 'Routes.php';
+
+function __autoload($class_name) {
+  require_once './classes/' . $class_name . '.php';
+}
+
+?>
