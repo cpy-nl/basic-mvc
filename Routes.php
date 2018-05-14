@@ -1,10 +1,10 @@
 <?php
 
-Route::set('about', function(){
+Route::set('about', function() {
   About::CreateView();
 });
 
-Route::set('contact', function(){
+Route::set('contact', function() {
   Contact::CreateView();
 });
 
