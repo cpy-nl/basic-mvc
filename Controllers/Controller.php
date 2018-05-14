@@ -1,8 +1,8 @@
 <?php
 
 class Controller {
-  public static function CreateView() {
-    echo "View created!";
+  public static function CreateView($viewName) {
+    require_once './Views/' . $viewName '.php';
   }
 }
 
