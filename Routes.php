@@ -4,7 +4,7 @@ Route::set('index.php', function() {
   Index::CreateView('Index');
 });
 
-Route::set('about.php', function() {
+Route::set('about', function() {
   About::CreateView('About');
 });
 
