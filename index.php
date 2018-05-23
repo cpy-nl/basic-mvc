@@ -2,9 +2,9 @@
 
 function autoloader($class) {
 
-  $file = "./classes/" . $class . ".php";
+  $file = "classes/" . $class . ".php";
 
-    //check if file is correct, otherwise don't bother requiring and throw an exception instead:
+    //check if file is OK, else throw exception
   try {
       if (file_exists($file)) {
           require_once $file;
@@ -17,7 +17,7 @@ function autoloader($class) {
   }
 }
 
-//SPL autoload register with exception throwing enabled
+// SPL autoload register with exception throwing enabled
 spl_autoload_register('autoloader', TRUE);
 
 ?>
